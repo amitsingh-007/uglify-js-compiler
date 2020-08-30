@@ -1,8 +1,26 @@
 import { Box, Button } from "@material-ui/core";
-import React from "react";
+import React, { useState } from "react";
 import { INPUT_WIDTH } from "../constants";
+import DoneAllIcon from "@material-ui/icons/DoneAll";
 
-export const TextContainer = ({ onButtonClick, buttonIcon, children }) => {
+const DONE_ICON = <DoneAllIcon />;
+
+export const TextContainer = ({
+  onButtonClick,
+  buttonIcon,
+  buttonTitle,
+  children,
+}) => {
+  const [icon, setIcon] = useState(buttonIcon);
+
+  const handleClick = () => {
+    onButtonClick();
+    setIcon(DONE_ICON);
+    setTimeout(() => {
+      setIcon(icon);
+    }, 1000);
+  };
+
   return (
     <Box width={INPUT_WIDTH} position="relative">
       {children}
@@ -11,8 +29,9 @@ export const TextContainer = ({ onButtonClick, buttonIcon, children }) => {
           variant="contained"
           color="primary"
           size="small"
-          startIcon={buttonIcon}
-          onClick={onButtonClick}
+          startIcon={icon}
+          onClick={handleClick}
+          title={buttonTitle}
         />
       </Box>
     </Box>

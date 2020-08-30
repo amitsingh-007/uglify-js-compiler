@@ -12,7 +12,11 @@ export const CodeInput = ({ inputCodeRef }) => {
   };
 
   return (
-    <TextContainer onButtonClick={handleClear} buttonIcon={CLEAR_ICON}>
+    <TextContainer
+      onButtonClick={handleClear}
+      buttonIcon={CLEAR_ICON}
+      buttonTitle="Clear"
+    >
       <TextField
         label="Your Code"
         id="outlined-margin-normal"
