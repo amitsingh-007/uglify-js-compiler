@@ -13,7 +13,8 @@ export const CodeInput = ({ inputCodeRef }) => {
         fullWidth
         multiline
         rows={INPUT_HEIGHT}
-        ref={inputCodeRef}
+        inputRef={inputCodeRef}
+        data-gramm="false"
       />
     </Box>
   );
