@@ -1,8 +1,9 @@
 import React from "react";
 import { TextField, Box } from "@material-ui/core";
 import { INPUT_WIDTH, INPUT_HEIGHT } from "../constants";
+import { getCompiledCode } from "../utils/compile";
 
-export const CompiledOutput = ({ compiledOutputRef }) => {
+export const CompiledOutput = ({ compiledOutputRef, inputCode }) => {
   return (
     <Box width={INPUT_WIDTH}>
       <TextField
@@ -15,6 +16,7 @@ export const CompiledOutput = ({ compiledOutputRef }) => {
         disabled
         rows={INPUT_HEIGHT}
         ref={compiledOutputRef}
+        value={getCompiledCode(inputCode)}
       />
     </Box>
   );
