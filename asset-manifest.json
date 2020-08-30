@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/uglify-js-compiler/static/js/main.adaa5fd5.chunk.js",
-    "main.js.map": "/uglify-js-compiler/static/js/main.adaa5fd5.chunk.js.map",
+    "main.js": "/uglify-js-compiler/static/js/main.25f0112c.chunk.js",
+    "main.js.map": "/uglify-js-compiler/static/js/main.25f0112c.chunk.js.map",
     "runtime-main.js": "/uglify-js-compiler/static/js/runtime-main.550eee7b.js",
     "runtime-main.js.map": "/uglify-js-compiler/static/js/runtime-main.550eee7b.js.map",
-    "static/js/2.7b384f07.chunk.js": "/uglify-js-compiler/static/js/2.7b384f07.chunk.js",
-    "static/js/2.7b384f07.chunk.js.map": "/uglify-js-compiler/static/js/2.7b384f07.chunk.js.map",
+    "static/js/2.5bc58144.chunk.js": "/uglify-js-compiler/static/js/2.5bc58144.chunk.js",
+    "static/js/2.5bc58144.chunk.js.map": "/uglify-js-compiler/static/js/2.5bc58144.chunk.js.map",
     "index.html": "/uglify-js-compiler/index.html",
-    "precache-manifest.bdc8f4875cb752bac43f42fe17f0c9da.js": "/uglify-js-compiler/precache-manifest.bdc8f4875cb752bac43f42fe17f0c9da.js",
+    "precache-manifest.b73219155aa6c6ad253cb5b416dd44c6.js": "/uglify-js-compiler/precache-manifest.b73219155aa6c6ad253cb5b416dd44c6.js",
     "service-worker.js": "/uglify-js-compiler/service-worker.js",
-    "static/js/2.7b384f07.chunk.js.LICENSE.txt": "/uglify-js-compiler/static/js/2.7b384f07.chunk.js.LICENSE.txt"
+    "static/js/2.5bc58144.chunk.js.LICENSE.txt": "/uglify-js-compiler/static/js/2.5bc58144.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.550eee7b.js",
-    "static/js/2.7b384f07.chunk.js",
-    "static/js/main.adaa5fd5.chunk.js"
+    "static/js/2.5bc58144.chunk.js",
+    "static/js/main.25f0112c.chunk.js"
   ]
 }
