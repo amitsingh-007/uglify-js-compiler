@@ -1,11 +1,20 @@
+import { TextField } from "@material-ui/core";
 import React from "react";
-import { TextField, Box } from "@material-ui/core";
-import { INPUT_WIDTH, INPUT_HEIGHT } from "../constants";
+import { INPUT_HEIGHT } from "../constants";
 import { getCompiledCode } from "../utils/compile";
+import { TextContainer } from "./TextContainer";
+import FilterNoneIcon from "@material-ui/icons/FilterNone";
+
+const COPY_ICON = <FilterNoneIcon />;
 
 export const CompiledOutput = ({ compiledOutputRef, inputCode }) => {
+  const handleCopy = () => {};
   return (
-    <Box width={INPUT_WIDTH}>
+    <TextContainer
+      onButtonClick={handleCopy}
+      buttonIcon={COPY_ICON}
+      buttonTitle="Copy"
+    >
       <TextField
         label="Compiled Code"
         id="outlined-margin-normal"
@@ -18,6 +27,6 @@ export const CompiledOutput = ({ compiledOutputRef, inputCode }) => {
         ref={compiledOutputRef}
         value={getCompiledCode(inputCode)}
       />
-    </Box>
+    </TextContainer>
   );
 };

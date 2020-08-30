@@ -1,10 +1,22 @@
+import { TextField } from "@material-ui/core";
+import BlockIcon from "@material-ui/icons/Block";
 import React from "react";
-import { TextField, Box } from "@material-ui/core";
-import { INPUT_WIDTH, INPUT_HEIGHT } from "../constants";
+import { INPUT_HEIGHT } from "../constants";
+import { TextContainer } from "./TextContainer";
+
+const CLEAR_ICON = <BlockIcon />;
 
 export const CodeInput = ({ inputCodeRef }) => {
+  const handleClear = () => {
+    inputCodeRef.current.value = "";
+  };
+
   return (
-    <Box width={INPUT_WIDTH}>
+    <TextContainer
+      onButtonClick={handleClear}
+      buttonIcon={CLEAR_ICON}
+      buttonTitle="Clear"
+    >
       <TextField
         label="Your Code"
         id="outlined-margin-normal"
@@ -14,8 +26,7 @@ export const CodeInput = ({ inputCodeRef }) => {
         multiline
         rows={INPUT_HEIGHT}
         inputRef={inputCodeRef}
-        data-gramm="false"
       />
-    </Box>
+    </TextContainer>
   );
 };
