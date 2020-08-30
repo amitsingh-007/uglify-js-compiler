@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - node
+  - 10.20.1
 script:
   - npm ci
   - npm run build
