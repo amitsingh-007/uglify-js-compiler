@@ -12,22 +12,25 @@ export const TextContainer = ({
   children,
 }) => {
   const [icon, setIcon] = useState(buttonIcon);
+  const [iconColor, setIconColor] = useState("primary");
 
   const handleClick = () => {
     onButtonClick();
     setIcon(DONE_ICON);
+    setIconColor("secondary");
     setTimeout(() => {
       setIcon(icon);
+      setIconColor("primary");
     }, 1000);
   };
 
   return (
     <Box width={INPUT_WIDTH} position="relative">
       {children}
-      <Box position="absolute" right="0" top="17px">
+      <Box position="absolute" right="0" top="16px">
         <Button
           variant="contained"
-          color="primary"
+          color={iconColor}
           size="small"
           startIcon={icon}
           onClick={handleClick}
