@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/uglify-js-compiler/precache-manifest.9bdec89849dd2ad70e9a9496a94d07f8.js"
+  "/uglify-js-compiler/precache-manifest.b7b8f0aadc93c7fe099f2e540337a1c2.js"
 );
 
 self.addEventListener('message', (event) => {
