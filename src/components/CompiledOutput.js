@@ -4,11 +4,15 @@ import { INPUT_HEIGHT } from "../constants";
 import { getCompiledCode } from "../utils/compile";
 import { TextContainer } from "./TextContainer";
 import FilterNoneIcon from "@material-ui/icons/FilterNone";
+import copy from "copy-to-clipboard";
 
 const COPY_ICON = <FilterNoneIcon />;
 
 export const CompiledOutput = ({ compiledOutputRef, inputCode }) => {
-  const handleCopy = () => {};
+  const handleCopy = () => {
+    const compiledCode = compiledOutputRef.current.value;
+    copy(compiledCode);
+  };
   return (
     <TextContainer
       onButtonClick={handleCopy}
@@ -24,7 +28,7 @@ export const CompiledOutput = ({ compiledOutputRef, inputCode }) => {
         multiline
         disabled
         rows={INPUT_HEIGHT}
-        ref={compiledOutputRef}
+        inputRef={compiledOutputRef}
         value={getCompiledCode(inputCode)}
       />
     </TextContainer>
