@@ -12,7 +12,7 @@ function App() {
   return (
     <Box
       display="flex"
-      justifyContent="space-between"
+      justifyContent="space-evenly"
       width="100%"
       height="100%"
     >
