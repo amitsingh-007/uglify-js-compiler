@@ -6,9 +6,10 @@ import { TextContainer } from "./TextContainer";
 
 const CLEAR_ICON = <BlockIcon />;
 
-export const CodeInput = ({ inputCodeRef }) => {
+export const CodeInput = ({ inputCodeRef, compiledOutputRef }) => {
   const handleClear = () => {
     inputCodeRef.current.value = "";
+    compiledOutputRef.current.value = "";
   };
 
   return (
