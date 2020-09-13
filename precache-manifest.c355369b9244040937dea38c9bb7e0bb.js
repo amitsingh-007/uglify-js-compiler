@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dde5f15af3277fa6dcd1e49e23520695",
+    "revision": "d42d44440f1773443f72e638797981fc",
     "url": "/uglify-js-compiler/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/uglify-js-compiler/static/js/2.f1d74c07.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e5262efe1b1dbaf3f3c6",
-    "url": "/uglify-js-compiler/static/js/main.6094710c.chunk.js"
+    "revision": "3240e53ec419d32b8672",
+    "url": "/uglify-js-compiler/static/js/main.ffbf4642.chunk.js"
   },
   {
     "revision": "fd711cbd501ddd47bdf7",
