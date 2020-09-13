@@ -23,7 +23,10 @@ function App() {
         width="100%"
         height="100%"
       >
-        <CodeInput inputCodeRef={inputCodeRef} />
+        <CodeInput
+          inputCodeRef={inputCodeRef}
+          compiledOutputRef={compiledOutputRef}
+        />
         <Box display="flex" flexDirection="column" justifyContent="center">
           <CompileButton
             inputCodeRef={inputCodeRef}
