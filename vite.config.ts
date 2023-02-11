@@ -1,9 +1,6 @@
-import solid from 'solid-start/vite';
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { defineConfig } from 'vite';
-// @ts-expect-error No declaration file
-// eslint-disable-next-line import/no-extraneous-dependencies
 import vercel from 'solid-start-vercel';
+import solid from 'solid-start/vite';
+import { defineConfig } from 'vite';
 
 export default defineConfig(() => {
   return {
