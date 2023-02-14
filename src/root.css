@@ -4,5 +4,7 @@
 
 html,
 body {
-  @apply h-screen w-screen;
+  height: 100svh;
+  width: 100svw;
+  /* @apply h-screen w-screen; */
 }
