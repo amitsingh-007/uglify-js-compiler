@@ -11,11 +11,14 @@ import {
   Scripts,
   Title,
 } from 'solid-start';
+import useTheme from './hooks/useTheme';
 import './root.css';
 
 export default function Root() {
+  const { theme } = useTheme();
+
   return (
-    <Html lang="en">
+    <Html lang="en" data-theme={theme()}>
       <Head>
         <Title>Uglify JS Compiler</Title>
         <Meta charset="utf-8" />
