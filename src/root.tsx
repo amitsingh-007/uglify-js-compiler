@@ -4,10 +4,12 @@ import {
   ErrorBoundary,
   FileRoutes,
   Head,
-  Html, Link, Meta,
+  Html,
+  Link,
+  Meta,
   Routes,
   Scripts,
-  Title
+  Title,
 } from 'solid-start';
 import './root.css';
 

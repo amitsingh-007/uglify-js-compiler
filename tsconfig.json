@@ -3,12 +3,13 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "strict": true,
+    "noUnusedLocals": true,
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "node",
     "jsxImportSource": "solid-js",
     "jsx": "preserve",
-    "types": ["solid-start/env"],
+    "types": ["solid-start/env", "unplugin-icons/types/solid"],
     "baseUrl": "./",
     "paths": {
       "~/*": ["./src/*"]
