@@ -4,6 +4,7 @@ import IconSun from '~icons/heroicons/sun';
 
 const ThemeToggle = () => {
   const { theme, setTheme } = useTheme();
+  const isDarkTheme = theme() === 'dark';
 
   return (
     <div class="gap-2">
@@ -11,7 +12,8 @@ const ThemeToggle = () => {
       <input
         type="checkbox"
         class="toggle"
-        checked={theme() === 'dark'}
+        classList={{ 'toggle-info': isDarkTheme }}
+        checked={isDarkTheme}
         onChange={(e) => setTheme(e.currentTarget.checked ? 'dark' : 'light')}
       />
       <IconMoon class="text-info" />

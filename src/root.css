@@ -7,3 +7,12 @@ body {
   height: 100svh;
   width: 100svw;
 }
+
+svg {
+  fill: currentColor;
+  stroke-width: 2px;
+}
+
+svg > path {
+  stroke-width: unset;
+}
