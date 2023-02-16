@@ -29,7 +29,7 @@ const CodeInputs: VoidComponent = () => {
       <div class="relative md:flex-1">
         <div
           ref={(el) => setOutputRef(el)}
-          class="textarea-primary textarea h-52 overflow-y-auto md:h-96"
+          class="textarea-primary textarea h-52 overflow-y-auto overflow-x-hidden md:h-96"
         >
           {compiledCode()}
           <CopyButton ref={outputRef} text={compiledCode} />
