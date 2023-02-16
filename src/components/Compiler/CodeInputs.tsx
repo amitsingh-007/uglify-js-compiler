@@ -31,7 +31,7 @@ const CodeInputs: VoidComponent = () => {
           ref={(el) => setOutputRef(el)}
           class="textarea-primary textarea h-52 overflow-y-auto overflow-x-hidden md:h-96"
         >
-          {compiledCode()}
+          <code contenteditable>{compiledCode()}</code>
           <CopyButton ref={outputRef} text={compiledCode} />
         </div>
       </div>
