@@ -11,11 +11,11 @@ import {
   Scripts,
   Title,
 } from 'solid-start';
-import useTheme from './hooks/useTheme';
+import { useThemeValue } from './hooks/useTheme';
 import './root.css';
 
 export default function Root() {
-  const { theme } = useTheme();
+  const { theme } = useThemeValue();
 
   return (
     <Html lang="en" data-theme={theme()}>

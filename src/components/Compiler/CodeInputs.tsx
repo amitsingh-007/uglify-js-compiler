@@ -2,9 +2,9 @@ import { createDebouncedMemoOn } from '@solid-primitives/memo';
 import { createSignal, VoidComponent } from 'solid-js';
 import getCompiledCode from '~/utils/compile';
 import IconCodeBracket from '~icons/heroicons/code-bracket';
-import CopyButton from './CopyButton';
+import CopyButton from '../AppShell/CopyButton';
 
-const Compiler: VoidComponent = () => {
+const CodeInputs: VoidComponent = () => {
   const [outputRef, setOutputRef] = createSignal<HTMLDivElement | undefined>();
   const [inputCode, setInputCode] = createSignal('');
 
@@ -15,7 +15,7 @@ const Compiler: VoidComponent = () => {
   );
 
   return (
-    <div class="flex h-full flex-col gap-8 pt-10 md:flex-row">
+    <div class="flex flex-col gap-8 md:flex-row">
       <textarea
         class="textarea-primary textarea h-52 resize-none md:h-96 md:flex-1"
         placeholder="Enter JavaScript Code"
@@ -39,4 +39,4 @@ const Compiler: VoidComponent = () => {
   );
 };
 
-export default Compiler;
+export default CodeInputs;

@@ -8,6 +8,7 @@ specifiers:
   '@solid-primitives/storage': 1.3.4
   '@solidjs/meta': 0.28.2
   '@solidjs/router': 0.7.0
+  '@stackblitz/sdk': 1.8.2
   '@types/node': 18.13.0
   '@typescript-eslint/eslint-plugin': 5.51.0
   '@typescript-eslint/parser': 5.51.0
@@ -41,6 +42,7 @@ dependencies:
   '@solid-primitives/storage': 1.3.4_solid-js@1.6.10
   '@solidjs/meta': 0.28.2_solid-js@1.6.10
   '@solidjs/router': 0.7.0_solid-js@1.6.10
+  '@stackblitz/sdk': 1.8.2
   daisyui: 2.50.0_gbtt6ss3tbiz4yjtvdr6fbrj44
   solid-js: 1.6.10
   solid-start: 0.2.20_nsv6qveglhecz5gr7mu5bcjb2i
@@ -1493,6 +1495,10 @@ packages:
       solid-js: ^1.5.3
     dependencies:
       solid-js: 1.6.10
+
+  /@stackblitz/sdk/1.8.2:
+    resolution: {integrity: sha512-3aTg0Tb9dNs1huPkpdYxPEX/yc8A28eZneUMOEJzOLi7EJwl5onr9gCAVjIOkN4WLYu1iBSiJiGBYT629bZIJQ==}
+    dev: false
 
   /@types/cookie/0.5.1:
     resolution: {integrity: sha512-COUnqfB2+ckwXXSFInsFdOAWQzCCx+a5hq2ruyj+Vjund94RJQd4LG2u9hnvJrTgunKAaax7ancBYlDrNYxA0g==}

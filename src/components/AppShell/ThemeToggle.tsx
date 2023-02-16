@@ -1,8 +1,9 @@
-import useTheme from '~/hooks/useTheme';
+import { VoidComponent } from 'solid-js';
+import { useTheme } from '~/hooks/useTheme';
 import IconMoon from '~icons/heroicons/moon';
 import IconSun from '~icons/heroicons/sun';
 
-const ThemeToggle = () => {
+const ThemeToggle: VoidComponent = () => {
   const { theme, setTheme } = useTheme();
   const isDarkTheme = theme() === 'dark';
 
