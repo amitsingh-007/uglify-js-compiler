@@ -1,10 +1,13 @@
 import { createDebouncedMemoOn } from '@solid-primitives/memo';
-import { createSignal, VoidComponent } from 'solid-js';
+import { createSignal, Show, VoidComponent } from 'solid-js';
+import usePlatform from '~/hooks/usePlatform';
 import getCompiledCode from '~/utils/compile';
-import IconCodeBracket from '~icons/heroicons/code-bracket';
+import IconChevronDoubleDown from '~icons/heroicons/chevron-double-down';
+import IconChevronDoubleRight from '~icons/heroicons/chevron-double-right';
 import CopyButton from '../AppShell/CopyButton';
 
 const CodeInputs: VoidComponent = () => {
+  const { isMobile } = usePlatform();
   const [outputRef, setOutputRef] = createSignal<HTMLDivElement | undefined>();
   const [inputCode, setInputCode] = createSignal('');
 
@@ -21,11 +24,20 @@ const CodeInputs: VoidComponent = () => {
         placeholder="Enter JavaScript Code"
         onInput={(e) => setInputCode(e.currentTarget.value)}
       />
-      <div class="w-inherit flex w-[inherit] items-center justify-center md:h-96 md:w-auto">
-        <button class="btn-primary btn gap-2">
-          Compile <IconCodeBracket class="font-bold" />
-        </button>
-      </div>
+      <Show when={isMobile}>
+        <div class="flex justify-center">
+          <IconChevronDoubleDown />
+          <IconChevronDoubleDown />
+          <IconChevronDoubleDown />
+        </div>
+      </Show>
+      <Show when={!isMobile}>
+        <div class="flex items-center">
+          <IconChevronDoubleRight />
+          <IconChevronDoubleRight />
+          <IconChevronDoubleRight />
+        </div>
+      </Show>
       <div class="relative md:w-2/5">
         <div
           ref={(el) => setOutputRef(el)}

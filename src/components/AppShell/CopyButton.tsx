@@ -1,6 +1,6 @@
 import { createEventListener } from '@solid-primitives/event-listener';
-import { isMobile } from '@solid-primitives/platform';
 import { Accessor, createSignal, onMount, Show, VoidComponent } from 'solid-js';
+import usePlatform from '~/hooks/usePlatform';
 import IconCheck from '~icons/heroicons/check';
 import IconClipboard from '~icons/heroicons/clipboard';
 
@@ -8,6 +8,7 @@ const CopyButton: VoidComponent<{
   ref: Accessor<HTMLElement | undefined>;
   text: Accessor<string>;
 }> = (props) => {
+  const { isMobile } = usePlatform();
   const [showCopy, setShowCopy] = createSignal(false);
   const [showCopied, setShowCopied] = createSignal(false);
 
