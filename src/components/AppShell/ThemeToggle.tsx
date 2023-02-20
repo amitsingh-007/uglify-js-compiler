@@ -12,7 +12,7 @@ const ThemeToggle: VoidComponent = () => {
       <IconSun class="text-warning" />
       <input
         type="checkbox"
-        class="toggle"
+        class="toggle border-2"
         classList={{ 'toggle-info': isDarkTheme }}
         checked={isDarkTheme}
         onChange={(e) => setTheme(e.currentTarget.checked ? 'dark' : 'light')}

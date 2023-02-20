@@ -3,12 +3,14 @@ import ThemeToggle from './ThemeToggle';
 
 const NavBar: VoidComponent = () => {
   return (
-    <nav class="navbar bg-base-100">
-      <div class="block w-full select-none text-center text-xl normal-case">
-        Uglify JS Compiler
-      </div>
-      <ThemeToggle />
-    </nav>
+    <div class="container">
+      <nav class="navbar bg-base-100 px-0">
+        <span class="block w-full select-none font-mono text-base normal-case md:text-center md:text-lg">
+          Uglify JS Compiler
+        </span>
+        <ThemeToggle />
+      </nav>
+    </div>
   );
 };
 

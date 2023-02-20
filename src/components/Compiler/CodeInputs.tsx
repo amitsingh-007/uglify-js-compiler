@@ -20,7 +20,8 @@ const CodeInputs: VoidComponent = () => {
   return (
     <div class="flex flex-col justify-between gap-8 md:flex-row">
       <textarea
-        class="textarea-primary textarea h-52 resize-none font-mono md:h-96 md:w-2/5"
+        autofocus
+        class="textarea-primary textarea h-52 resize-none border-2 font-mono md:h-96 md:w-[45%]"
         placeholder="Enter JavaScript Code"
         onInput={(e) => setInputCode(e.currentTarget.value)}
       />
@@ -38,10 +39,10 @@ const CodeInputs: VoidComponent = () => {
           <IconChevronDoubleRight />
         </div>
       </Show>
-      <div class="relative md:w-2/5">
+      <div class="relative md:w-[45%]">
         <div
           ref={(el) => setOutputRef(el)}
-          class="textarea-primary textarea h-52 overflow-y-auto overflow-x-hidden font-mono md:h-96"
+          class="textarea-primary textarea h-52 overflow-y-auto overflow-x-hidden border-2 font-mono md:h-96"
         >
           {compiledCode()}
           <CopyButton ref={outputRef} text={compiledCode} />
