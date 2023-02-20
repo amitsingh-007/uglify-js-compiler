@@ -2,8 +2,7 @@ import { createDebouncedMemoOn } from '@solid-primitives/memo';
 import { createSignal, Show, VoidComponent } from 'solid-js';
 import usePlatform from '~/hooks/usePlatform';
 import getCompiledCode from '~/utils/compile';
-import IconChevronDoubleDown from '~icons/heroicons/chevron-double-down';
-import IconChevronDoubleRight from '~icons/heroicons/chevron-double-right';
+import IconShuffleBold from '~icons/ph/shuffle-duotone';
 import CopyButton from '../AppShell/CopyButton';
 
 const CodeInputs: VoidComponent = () => {
@@ -27,16 +26,12 @@ const CodeInputs: VoidComponent = () => {
       />
       <Show when={isMobile}>
         <div class="flex justify-center">
-          <IconChevronDoubleDown />
-          <IconChevronDoubleDown />
-          <IconChevronDoubleDown />
+          <IconShuffleBold class="h-7 w-7 rotate-90" />
         </div>
       </Show>
       <Show when={!isMobile}>
         <div class="flex items-center">
-          <IconChevronDoubleRight />
-          <IconChevronDoubleRight />
-          <IconChevronDoubleRight />
+          <IconShuffleBold class="h-7 w-7" />
         </div>
       </Show>
       <div class="relative md:w-[45%]">
