@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@iconify-json/heroicons': 1.1.8
+  '@iconify-json/mdi': 1.1.47
   '@iconify-json/ph': 1.1.4
   '@solid-primitives/event-listener': 2.2.6
   '@solid-primitives/memo': 1.1.4
@@ -54,6 +55,7 @@ dependencies:
 
 devDependencies:
   '@iconify-json/heroicons': 1.1.8
+  '@iconify-json/mdi': 1.1.47
   '@iconify-json/ph': 1.1.4
   '@types/node': 18.13.0
   '@types/ua-parser-js': 0.7.36
@@ -1253,6 +1255,12 @@ packages:
 
   /@iconify-json/heroicons/1.1.8:
     resolution: {integrity: sha512-AlfKxl5MRYxSpT5FRa7FiTKneR15ptvNvxU3OY8szK8115uUBkSlFCuOUZPMUcUxnhkDrhriPqScc5TAv1hBNA==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/mdi/1.1.47:
+    resolution: {integrity: sha512-5E5mazdQaMNl3gmLL7whteh61weJBRfW2R9Rq0/pgAe9B0j22mViyADm/ooHZx07Vkc0ZqnkgUrpT6OsS9Qhzg==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true

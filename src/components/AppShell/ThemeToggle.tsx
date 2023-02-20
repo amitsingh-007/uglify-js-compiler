@@ -1,24 +1,30 @@
-import { VoidComponent } from 'solid-js';
+import { Show, VoidComponent } from 'solid-js';
 import { useTheme } from '~/hooks/useTheme';
 import IconMoon from '~icons/heroicons/moon';
 import IconSun from '~icons/heroicons/sun';
 
 const ThemeToggle: VoidComponent = () => {
   const { theme, setTheme } = useTheme();
-  const isDarkTheme = theme() === 'dark';
 
   return (
-    <div class="gap-2">
-      <IconSun class="text-warning" />
-      <input
-        type="checkbox"
-        class="toggle border-2"
-        classList={{ 'toggle-info': isDarkTheme }}
-        checked={isDarkTheme}
-        onChange={(e) => setTheme(e.currentTarget.checked ? 'dark' : 'light')}
-      />
-      <IconMoon class="text-info" />
-    </div>
+    <>
+      <Show when={theme() === 'light'}>
+        <button
+          class="btn-ghost btn-sm btn-circle btn"
+          onClick={() => setTheme('dark')}
+        >
+          <IconMoon class="text-info" />
+        </button>
+      </Show>
+      <Show when={theme() === 'dark'}>
+        <button
+          class="btn-ghost btn-sm btn-circle btn"
+          onClick={() => setTheme('light')}
+        >
+          <IconSun class="h-[1.4rem] w-[1.4rem] text-warning" />
+        </button>
+      </Show>
+    </>
   );
 };
 
