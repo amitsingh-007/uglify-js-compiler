@@ -30,7 +30,7 @@ const CopyButton: VoidComponent<{
     <Show when={isMobile || showCopy()}>
       <Show when={!showCopied()}>
         <button
-          class="btn-active btn-square btn-sm btn absolute top-2 right-2"
+          class="btn-active btn-sm btn-square btn absolute top-2 right-2"
           onClick={handleCopyCode}
         >
           <IconClipboard />
@@ -41,7 +41,7 @@ const CopyButton: VoidComponent<{
           class="tooltip-open tooltip tooltip-left absolute top-2 right-2"
           data-tip="Copied!"
         >
-          <button class="btn-square btn-sm btn">
+          <button class="btn-sm btn-square btn">
             <IconCheck class="text-success" />
           </button>
         </div>
