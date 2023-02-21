@@ -1,4 +1,4 @@
-# uglify-js-compiler
+# Uglify JS Compiler
 
 This is a JavaScript Compiler to compile any JavaScript code into a valid uglified transpiled JavaScript code. You can also execute the uglified JavaScript code right from the browser itself.
 
