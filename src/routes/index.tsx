@@ -1,7 +1,11 @@
 import { type VoidComponent } from 'solid-js';
+import AppShell from '~/components/AppShell';
+import Compiler from '~/components/Compiler';
 
-const Home: VoidComponent = () => {
-  return <h1 class="mb-6 text-5xl font-bold">Hello World</h1>;
-};
+const Home: VoidComponent = () => (
+  <AppShell>
+    <Compiler />
+  </AppShell>
+);
 
 export default Home;
