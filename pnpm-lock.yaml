@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@solid-primitives/event-listener':
-    specifier: 2.2.6
-    version: 2.2.6(solid-js@1.6.11)
+    specifier: 2.2.8
+    version: 2.2.8(solid-js@1.6.11)
   '@solid-primitives/memo':
     specifier: 1.1.4
     version: 1.1.4(solid-js@1.6.11)
@@ -1567,12 +1567,12 @@ packages:
   /@sideway/pinpoint@2.0.0:
     resolution: {integrity: sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==}
 
-  /@solid-primitives/event-listener@2.2.6(solid-js@1.6.11):
-    resolution: {integrity: sha512-Lb2q888Apv8wqgZ3WvPlt8ic2rEmHx6QT8d3pgi+JRSIRNwAysE6PZDmbwT6/hzzP1TIQG0IRZwh5tomfuqlaQ==}
+  /@solid-primitives/event-listener@2.2.8(solid-js@1.6.11):
+    resolution: {integrity: sha512-I3Fw6+1g1YrXBWHwnNi6UaYuRVeaRBN2pvfGvKgnHH4OtfN6mgkGXi7s+/QOJjS29sEdwRDR9tQgxckaIxKZ7A==}
     peerDependencies:
       solid-js: ^1.6.0
     dependencies:
-      '@solid-primitives/utils': 5.1.0(solid-js@1.6.11)
+      '@solid-primitives/utils': 5.5.2(solid-js@1.6.11)
       solid-js: 1.6.11
     dev: false
 
