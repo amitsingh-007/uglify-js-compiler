@@ -47,8 +47,8 @@ dependencies:
 
 devDependencies:
   '@iconify-json/heroicons':
-    specifier: 1.1.10
-    version: 1.1.10
+    specifier: 1.1.19
+    version: 1.1.19
   '@iconify-json/mdi':
     specifier: 1.1.47
     version: 1.1.47
@@ -1302,8 +1302,8 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@iconify-json/heroicons@1.1.10:
-    resolution: {integrity: sha512-BQNQIQEL6QZ4FoPxJzLrTBAz7OHQezFFdEEl3gyDOZK8rawIIaPl7AtOZrvyOoSgtkU/Xp8V9pJ5JekdREEsQA==}
+  /@iconify-json/heroicons@1.1.19:
+    resolution: {integrity: sha512-uW2F9vdGll59W21ocBl+wR4Ve+/1CsmzBqPTuOaR3CbKzqnJKwzGASvC4Op0uTieFVWfBaevnzcRxwNo73J29g==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
