@@ -41,7 +41,7 @@
     "prettier-plugin-tailwindcss": "0.5.11",
     "solid-start-node": "0.3.10",
     "solid-start-vercel": "0.3.10",
-    "tailwindcss": "3.2.7",
+    "tailwindcss": "3.4.1",
     "typescript": "5.3.3",
     "vite": "3.1.8",
     "vite-plugin-eslint": "1.8.1"
