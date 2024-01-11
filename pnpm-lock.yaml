@@ -18,8 +18,8 @@ dependencies:
     specifier: 0.28.7
     version: 0.28.7(solid-js@1.6.11)
   '@solidjs/router':
-    specifier: 0.7.0
-    version: 0.7.0(solid-js@1.6.11)
+    specifier: 0.7.1
+    version: 0.7.1(solid-js@1.6.11)
   '@stackblitz/sdk':
     specifier: 1.9.0
     version: 1.9.0
@@ -31,7 +31,7 @@ dependencies:
     version: 1.6.11
   solid-start:
     specifier: 0.2.21
-    version: 0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.0)(solid-js@1.6.11)(solid-start-node@0.3.10)(solid-start-vercel@0.2.21)(vite@3.1.8)
+    version: 0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.1)(solid-js@1.6.11)(solid-start-node@0.3.10)(solid-start-vercel@0.2.21)(vite@3.1.8)
   ua-parser-js:
     specifier: 1.0.37
     version: 1.0.37
@@ -1641,8 +1641,8 @@ packages:
     dependencies:
       solid-js: 1.6.11
 
-  /@solidjs/router@0.7.0(solid-js@1.6.11):
-    resolution: {integrity: sha512-8HI84twe5FjYRebSLMAhtkL9bRuTDIlxJK56kjfjU9WKGoUCTaWpCnkuj8Hqde1bWZ0X+GOZxKDfNkn1CjtjxA==}
+  /@solidjs/router@0.7.1(solid-js@1.6.11):
+    resolution: {integrity: sha512-wLE1GjZB/h9HmHMe+S4QBeS7FsjwlpkuNAJ0vOC5WFoyRECKS7sTrzPhGGJB9rxC4OMsXPwXDOXYQ599MMe0Dg==}
     peerDependencies:
       solid-js: ^1.5.3
     dependencies:
@@ -5001,7 +5001,7 @@ packages:
       polka: 1.0.0-next.22
       rollup: 3.29.4
       sirv: 2.0.4
-      solid-start: 0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.0)(solid-js@1.6.11)(solid-start-node@0.3.10)(solid-start-vercel@0.2.21)(vite@3.1.8)
+      solid-start: 0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.1)(solid-js@1.6.11)(solid-start-node@0.3.10)(solid-start-vercel@0.2.21)(vite@3.1.8)
       terser: 5.26.0
       vite: 3.1.8
     transitivePeerDependencies:
@@ -5020,14 +5020,14 @@ packages:
       fast-glob: 3.2.12
       micromatch: 4.0.5
       rollup: 3.17.2
-      solid-start: 0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.0)(solid-js@1.6.11)(solid-start-node@0.3.10)(solid-start-vercel@0.2.21)(vite@3.1.8)
+      solid-start: 0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.1)(solid-js@1.6.11)(solid-start-node@0.3.10)(solid-start-vercel@0.2.21)(vite@3.1.8)
       terser: 5.16.4
       vite: 3.1.8
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  /solid-start@0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.0)(solid-js@1.6.11)(solid-start-node@0.3.10)(solid-start-vercel@0.2.21)(vite@3.1.8):
+  /solid-start@0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.1)(solid-js@1.6.11)(solid-start-node@0.3.10)(solid-start-vercel@0.2.21)(vite@3.1.8):
     resolution: {integrity: sha512-igh1vI6d8sBm9BeGGcJOE7ewEOSlhzmL3f4iVX0bg5oz+9xtqAf1EA0MvNkTLTvq5YKsVKYy80oJmm/xg0F8jw==}
     hasBin: true
     peerDependencies:
@@ -5068,7 +5068,7 @@ packages:
       '@babel/preset-typescript': 7.21.0(@babel/core@7.21.0)
       '@babel/template': 7.20.7
       '@solidjs/meta': 0.28.7(solid-js@1.6.11)
-      '@solidjs/router': 0.7.0(solid-js@1.6.11)
+      '@solidjs/router': 0.7.1(solid-js@1.6.11)
       '@types/cookie': 0.5.1
       chokidar: 3.5.3
       compression: 1.7.4
