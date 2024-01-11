@@ -21,8 +21,8 @@ dependencies:
     specifier: 0.7.0
     version: 0.7.0(solid-js@1.6.11)
   '@stackblitz/sdk':
-    specifier: 1.8.2
-    version: 1.8.2
+    specifier: 1.9.0
+    version: 1.9.0
   daisyui:
     specifier: 2.50.2
     version: 2.50.2(autoprefixer@10.4.13)(postcss@8.4.33)
@@ -1633,8 +1633,8 @@ packages:
     dependencies:
       solid-js: 1.6.11
 
-  /@stackblitz/sdk@1.8.2:
-    resolution: {integrity: sha512-3aTg0Tb9dNs1huPkpdYxPEX/yc8A28eZneUMOEJzOLi7EJwl5onr9gCAVjIOkN4WLYu1iBSiJiGBYT629bZIJQ==}
+  /@stackblitz/sdk@1.9.0:
+    resolution: {integrity: sha512-3m6C7f8pnR5KXys/Hqx2x6ylnpqOak6HtnZI6T5keEO0yT+E4Spkw37VEbdwuC+2oxmjdgq6YZEgiKX7hM1GmQ==}
     dev: false
 
   /@types/cookie@0.5.1:
