@@ -35,9 +35,6 @@ dependencies:
   ua-parser-js:
     specifier: 1.0.37
     version: 1.0.37
-  undici:
-    specifier: 5.20.0
-    version: 5.20.0
   unplugin-icons:
     specifier: 0.18.2
     version: 0.18.2
