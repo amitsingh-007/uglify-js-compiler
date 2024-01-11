@@ -33,8 +33,8 @@ dependencies:
     specifier: 0.2.21
     version: 0.2.21(@solidjs/meta@0.28.2)(@solidjs/router@0.7.0)(solid-js@1.6.11)(solid-start-node@0.3.10)(solid-start-vercel@0.2.21)(vite@3.1.8)
   ua-parser-js:
-    specifier: 1.0.33
-    version: 1.0.33
+    specifier: 1.0.37
+    version: 1.0.37
   undici:
     specifier: 5.20.0
     version: 5.20.0
@@ -5403,8 +5403,8 @@ packages:
     hasBin: true
     dev: true
 
-  /ua-parser-js@1.0.33:
-    resolution: {integrity: sha512-RqshF7TPTE0XLYAqmjlu5cLLuGdKrNu9O1KLA/qp39QtbZwuzwv1dT46DZSopoUMsYgXpB3Cv8a03FI8b74oFQ==}
+  /ua-parser-js@1.0.37:
+    resolution: {integrity: sha512-bhTyI94tZofjo+Dn8SN6Zv8nBDvyXTymAdM3LDI/0IboIUwTu1rEhW7v2TfiVsoYWgkQ4kOVqnI8APUFbIQIFQ==}
     dev: false
 
   /ufo@1.1.0:
