@@ -53,8 +53,8 @@ devDependencies:
     specifier: 1.1.47
     version: 1.1.47
   '@iconify-json/ph':
-    specifier: 1.1.4
-    version: 1.1.4
+    specifier: 1.1.10
+    version: 1.1.10
   '@types/node':
     specifier: 20.11.0
     version: 20.11.0
@@ -1329,8 +1329,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: true
 
-  /@iconify-json/ph@1.1.4:
-    resolution: {integrity: sha512-2A3+G/bvYB+ab1QL4SIsXVECvjSkSg+smNdWAg30QlksyZ1bI7Zh3wzyZCA2saDJPkVGyMJHSLI5EXExk/jmnQ==}
+  /@iconify-json/ph@1.1.10:
+    resolution: {integrity: sha512-e7owJfx9BgnUVGXKk/243iFV4tHH1UiBDl5mWYkwKoPf4nN2rzPGdD7ISfvwr3SB25VvOteSC5DOVWxjs56Ywg==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
