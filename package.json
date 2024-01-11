@@ -18,7 +18,7 @@
     "solid-js": "1.6.11",
     "solid-start": "0.2.21",
     "ua-parser-js": "1.0.37",
-    "undici": "5.20.0",
+    "undici": "6.3.0",
     "unplugin-icons": "0.18.2",
     "zod": "3.20.6"
   },
