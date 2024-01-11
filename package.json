@@ -28,7 +28,7 @@
     "@iconify-json/ph": "1.1.4",
     "@types/node": "20.11.0",
     "@types/ua-parser-js": "0.7.36",
-    "@typescript-eslint/eslint-plugin": "5.53.0",
+    "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.53.0",
     "autoprefixer": "10.4.13",
     "eslint": "8.34.0",
