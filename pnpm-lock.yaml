@@ -9,8 +9,8 @@ dependencies:
     specifier: 2.2.8
     version: 2.2.8(solid-js@1.8.10)
   '@solid-primitives/memo':
-    specifier: 1.2.2
-    version: 1.2.2(solid-js@1.8.10)
+    specifier: 1.3.6
+    version: 1.3.6(solid-js@1.8.10)
   '@solid-primitives/storage':
     specifier: 1.3.7
     version: 1.3.7(solid-js@1.8.10)
@@ -1567,18 +1567,18 @@ packages:
       solid-js: 1.8.10
     dev: false
 
-  /@solid-primitives/memo@1.2.2(solid-js@1.8.10):
-    resolution: {integrity: sha512-Kp+ffGfLbM1KetDfNBTXkY6wi0Y6DyrvDPaH+VP81j6x+Yxk2NSoeJDKCMXpklWJh20HS/shxQOIWfayGhLqUw==}
+  /@solid-primitives/memo@1.3.6(solid-js@1.8.10):
+    resolution: {integrity: sha512-3cefM0J+9gDDnYj4z7TZLBEDlV4kf/xtpIcagGRoCbMXO5eBIbAa3Um7HUFSpfCrj3G6X++qZ+JPfZyE9yL81Q==}
     peerDependencies:
-      solid-js: ^1.6.0
+      solid-js: ^1.6.12
     dependencies:
-      '@solid-primitives/scheduled': 1.4.1(solid-js@1.8.10)
-      '@solid-primitives/utils': 5.5.2(solid-js@1.8.10)
+      '@solid-primitives/scheduled': 1.4.2(solid-js@1.8.10)
+      '@solid-primitives/utils': 6.2.2(solid-js@1.8.10)
       solid-js: 1.8.10
     dev: false
 
-  /@solid-primitives/scheduled@1.4.1(solid-js@1.8.10):
-    resolution: {integrity: sha512-OLcNXwYpX7HUOEqNPcmR31dkyI1E2imkMDBRlqsGT0ZhJV1L2g0TEREpo4nm/kUhh8LVQzkfnxS+GONx9kh90A==}
+  /@solid-primitives/scheduled@1.4.2(solid-js@1.8.10):
+    resolution: {integrity: sha512-duKaugDQtPk0v6MnkBuEalWk66/vA2G7zzoimQEvmUdh2+K2o8t908HIfI2NdBfwakQMQBV4epE3TFeN2Vsveg==}
     peerDependencies:
       solid-js: ^1.6.12
     dependencies:
@@ -1596,6 +1596,14 @@ packages:
 
   /@solid-primitives/utils@5.5.2(solid-js@1.8.10):
     resolution: {integrity: sha512-L52ig3eHKU6CqbPCKJIb4lweBuINHBOERcE1duApyKozEN8+zCqEKwD1Qo9ljKeEzJTBGWClxNpwEiNTUWTGvg==}
+    peerDependencies:
+      solid-js: ^1.6.12
+    dependencies:
+      solid-js: 1.8.10
+    dev: false
+
+  /@solid-primitives/utils@6.2.2(solid-js@1.8.10):
+    resolution: {integrity: sha512-11ypVbp987XxETeRqY5Y3OmmTpm8/jZqJXRvo6AyqBthzkvvjEdReuUMU2yVb+pwWGxfZpWHZ6EUCcGXUMhfwg==}
     peerDependencies:
       solid-js: ^1.6.12
     dependencies:
