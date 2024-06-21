@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@iconify-json/heroicons": "1.1.21",
-    "@iconify-json/mdi": "1.1.64",
+    "@iconify-json/mdi": "1.1.67",
     "@iconify-json/ph": "1.1.13",
     "@types/node": "20.14.7",
     "@types/ua-parser-js": "0.7.39",
