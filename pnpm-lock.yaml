@@ -31,7 +31,7 @@ dependencies:
     version: 1.8.17
   solid-start:
     specifier: 0.2.21
-    version: 0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.1)(solid-js@1.8.17)(solid-start-node@0.3.11)(solid-start-vercel@0.3.10)(vite@3.1.8)
+    version: 0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.1)(solid-js@1.8.17)(solid-start-node@0.3.11)(solid-start-vercel@0.3.11)(vite@3.1.8)
   ua-parser-js:
     specifier: 1.0.38
     version: 1.0.38
@@ -98,8 +98,8 @@ devDependencies:
     specifier: 0.3.11
     version: 0.3.11(solid-start@0.2.21)(vite@3.1.8)
   solid-start-vercel:
-    specifier: 0.3.10
-    version: 0.3.10(solid-start@0.2.21)(vite@3.1.8)
+    specifier: 0.3.11
+    version: 0.3.11(solid-start@0.2.21)(vite@3.1.8)
   tailwindcss:
     specifier: 3.4.4
     version: 3.4.4
@@ -1431,7 +1431,7 @@ packages:
       nopt: 5.0.0
       npmlog: 5.0.1
       rimraf: 3.0.2
-      semver: 7.5.4
+      semver: 7.6.2
       tar: 6.1.13
     transitivePeerDependencies:
       - encoding
@@ -1603,7 +1603,7 @@ packages:
     dependencies:
       '@solid-primitives/utils': 6.2.3(solid-js@1.8.17)
       solid-js: 1.8.17
-      solid-start: 0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.1)(solid-js@1.8.17)(solid-start-node@0.3.11)(solid-start-vercel@0.3.10)(vite@3.1.8)
+      solid-start: 0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.1)(solid-js@1.8.17)(solid-start-node@0.3.11)(solid-start-vercel@0.3.11)(vite@3.1.8)
     dev: false
 
   /@solid-primitives/utils@5.5.2(solid-js@1.8.17):
@@ -1974,6 +1974,7 @@ packages:
   /are-we-there-yet@2.0.0:
     resolution: {integrity: sha512-Ci/qENmwHnsYo9xKIcUJN5LeDKdJ6R1Z1j9V/J5wyq8nh/mYPEpIKJbBZXtZjG04HiK7zV/p6Vs9952MrMeUIw==}
     engines: {node: '>=10'}
+    deprecated: This package is no longer supported.
     dependencies:
       delegates: 1.0.0
       readable-stream: 3.6.0
@@ -3471,6 +3472,7 @@ packages:
   /gauge@3.0.2:
     resolution: {integrity: sha512-+5J6MS/5XksCuXq++uFRsnUd7Ovu1XenbeuIuNRJxYWjgQbPuFhT14lAvsWfqfAmnwluf1OwMjz39HjfLPci0Q==}
     engines: {node: '>=10'}
+    deprecated: This package is no longer supported.
     dependencies:
       aproba: 2.0.0
       color-support: 1.1.3
@@ -4035,6 +4037,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
+    dev: true
 
   /magic-string@0.27.0:
     resolution: {integrity: sha512-8UnnX2PeRAPZuN12svgR9j7M1uWMovg/CEnIwIG0LFkXSJJe4PdfUGiTGl8V9bsBHFUtfVINcSyYxd7q+kx9fA==}
@@ -4240,6 +4243,7 @@ packages:
 
   /npmlog@5.0.1:
     resolution: {integrity: sha512-AqZtDUWOMKs1G/8lwylVjrdYgqA4d9nu8hc+0gzRxlDb1I10+FHBGMXs6aiQHFdCUUlqH99MUMuLfzWDNDtfxw==}
+    deprecated: This package is no longer supported.
     dependencies:
       are-we-there-yet: 2.0.0
       console-control-strings: 1.1.0
@@ -4705,6 +4709,7 @@ packages:
 
   /rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
     dependencies:
       glob: 7.2.3
@@ -4817,12 +4822,12 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
+    dev: true
 
   /semver@7.6.2:
     resolution: {integrity: sha512-FNAIBWCx9qcRhoHcgcJ0gvU7SN1lYU2ZXuSfl04bSC5OpvDHFyJCjdNHomPXxjQlCBU67YW64PzY7/VIEH7F2w==}
     engines: {node: '>=10'}
     hasBin: true
-    dev: true
 
   /seroval-plugins@1.0.4(seroval@1.0.4):
     resolution: {integrity: sha512-DQ2IK6oQVvy8k+c2V5x5YCtUa/GGGsUwUBNN9UqohrZ0rWdUapBFpNMYP1bCyRHoxOJjdKGl+dieacFIpU/i1A==}
@@ -4938,14 +4943,14 @@ packages:
       polka: 1.0.0-next.22
       rollup: 3.29.4
       sirv: 2.0.4
-      solid-start: 0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.1)(solid-js@1.8.17)(solid-start-node@0.3.11)(solid-start-vercel@0.3.10)(vite@3.1.8)
+      solid-start: 0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.1)(solid-js@1.8.17)(solid-start-node@0.3.11)(solid-start-vercel@0.3.11)(vite@3.1.8)
       terser: 5.26.0
       vite: 3.1.8
     transitivePeerDependencies:
       - supports-color
 
-  /solid-start-vercel@0.3.10(solid-start@0.2.21)(vite@3.1.8):
-    resolution: {integrity: sha512-ZgWJoyWfpodiGkAPw3/LwrG5XBuPAth8taKtoqlOGNrnW/0rwl6YoXLOOO6tj/OZN2+CN8lIlBdfdhXegZD9OQ==}
+  /solid-start-vercel@0.3.11(solid-start@0.2.21)(vite@3.1.8):
+    resolution: {integrity: sha512-W0PrdFh5glz8dJhUMAvqqMlktZud1lA4CjH7jH135u9KEVyt03mvw/JmG8t0n6jFRfUJV9PxhGgFhkqCmdstzQ==}
     peerDependencies:
       solid-start: '*'
       vite: '*'
@@ -4957,14 +4962,14 @@ packages:
       fast-glob: 3.2.12
       micromatch: 4.0.5
       rollup: 3.29.4
-      solid-start: 0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.1)(solid-js@1.8.17)(solid-start-node@0.3.11)(solid-start-vercel@0.3.10)(vite@3.1.8)
+      solid-start: 0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.1)(solid-js@1.8.17)(solid-start-node@0.3.11)(solid-start-vercel@0.3.11)(vite@3.1.8)
       terser: 5.26.0
       vite: 3.1.8
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  /solid-start@0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.1)(solid-js@1.8.17)(solid-start-node@0.3.11)(solid-start-vercel@0.3.10)(vite@3.1.8):
+  /solid-start@0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.1)(solid-js@1.8.17)(solid-start-node@0.3.11)(solid-start-vercel@0.3.11)(vite@3.1.8):
     resolution: {integrity: sha512-igh1vI6d8sBm9BeGGcJOE7ewEOSlhzmL3f4iVX0bg5oz+9xtqAf1EA0MvNkTLTvq5YKsVKYy80oJmm/xg0F8jw==}
     hasBin: true
     peerDependencies:
@@ -5028,7 +5033,7 @@ packages:
       sirv: 2.0.2
       solid-js: 1.8.17
       solid-start-node: 0.3.11(solid-start@0.2.21)(vite@3.1.8)
-      solid-start-vercel: 0.3.10(solid-start@0.2.21)(vite@3.1.8)
+      solid-start-vercel: 0.3.11(solid-start@0.2.21)(vite@3.1.8)
       terser: 5.16.4
       undici: 5.20.0
       vite: 3.1.8
