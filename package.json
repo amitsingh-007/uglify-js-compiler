@@ -17,7 +17,7 @@
     "daisyui": "4.6.0",
     "solid-js": "1.8.17",
     "solid-start": "0.2.21",
-    "ua-parser-js": "1.0.37",
+    "ua-parser-js": "1.0.38",
     "unplugin-icons": "0.19.0",
     "zod": "3.22.4"
   },
