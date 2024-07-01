@@ -16,7 +16,7 @@ importers:
         version: 1.3.8(solid-js@1.8.17)
       '@solid-primitives/storage':
         specifier: 3.7.1
-        version: 3.7.1(solid-js@1.8.17)(solid-start@0.2.21)
+        version: 3.7.1(solid-js@1.8.17)(solid-start@0.2.21(@solidjs/meta@0.28.7(solid-js@1.8.17))(@solidjs/router@0.7.1(solid-js@1.8.17))(solid-js@1.8.17)(solid-start-node@0.3.11)(solid-start-vercel@0.3.11)(vite@3.1.8(terser@5.26.0)))
       '@solidjs/meta':
         specifier: 0.28.7
         version: 0.28.7(solid-js@1.8.17)
@@ -27,14 +27,14 @@ importers:
         specifier: 1.10.0
         version: 1.10.0
       daisyui:
-        specifier: 4.12.2
-        version: 4.12.2(postcss@8.4.38)
+        specifier: 4.12.10
+        version: 4.12.10(postcss@8.4.38)
       solid-js:
         specifier: 1.8.17
         version: 1.8.17
       solid-start:
         specifier: 0.2.21
-        version: 0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.1)(solid-js@1.8.17)(solid-start-node@0.3.11)(solid-start-vercel@0.3.11)(vite@3.1.8)
+        version: 0.2.21(@solidjs/meta@0.28.7(solid-js@1.8.17))(@solidjs/router@0.7.1(solid-js@1.8.17))(solid-js@1.8.17)(solid-start-node@0.3.11)(solid-start-vercel@0.3.11)(vite@3.1.8(terser@5.26.0))
       ua-parser-js:
         specifier: 1.0.38
         version: 1.0.38
@@ -62,7 +62,7 @@ importers:
         version: 0.7.39
       '@typescript-eslint/eslint-plugin':
         specifier: 5.62.0
-        version: 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.57.0)(typescript@5.5.2)
+        version: 5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.5.2))(eslint@8.57.0)(typescript@5.5.2)
       '@typescript-eslint/parser':
         specifier: 5.62.0
         version: 5.62.0(eslint@8.57.0)(typescript@5.5.2)
@@ -74,16 +74,16 @@ importers:
         version: 8.57.0
       eslint-config-airbnb-typescript:
         specifier: 17.1.0
-        version: 17.1.0(@typescript-eslint/eslint-plugin@5.62.0)(@typescript-eslint/parser@5.62.0)(eslint-plugin-import@2.29.1)(eslint@8.57.0)
+        version: 17.1.0(@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.5.2))(eslint@8.57.0)(typescript@5.5.2))(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.5.2))(eslint-plugin-import@2.29.1(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.5.2))(eslint@8.57.0))(eslint@8.57.0)
       eslint-config-prettier:
         specifier: 9.1.0
         version: 9.1.0(eslint@8.57.0)
       eslint-plugin-import:
         specifier: 2.29.1
-        version: 2.29.1(@typescript-eslint/parser@5.62.0)(eslint@8.57.0)
+        version: 2.29.1(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.5.2))(eslint@8.57.0)
       eslint-plugin-prettier:
         specifier: 5.1.3
-        version: 5.1.3(eslint-config-prettier@9.1.0)(eslint@8.57.0)(prettier@3.3.2)
+        version: 5.1.3(@types/eslint@8.21.0)(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.3.2)
       eslint-plugin-solid:
         specifier: 0.14.1
         version: 0.14.1(eslint@8.57.0)(typescript@5.5.2)
@@ -98,10 +98,10 @@ importers:
         version: 0.6.5(prettier@3.3.2)
       solid-start-node:
         specifier: 0.3.11
-        version: 0.3.11(solid-start@0.2.21)(vite@3.1.8)
+        version: 0.3.11(solid-start@0.2.21)(vite@3.1.8(terser@5.26.0))
       solid-start-vercel:
         specifier: 0.3.11
-        version: 0.3.11(solid-start@0.2.21)(vite@3.1.8)
+        version: 0.3.11(solid-start@0.2.21)(vite@3.1.8(terser@5.26.0))
       tailwindcss:
         specifier: 3.4.4
         version: 3.4.4
@@ -110,10 +110,10 @@ importers:
         version: 5.5.2
       vite:
         specifier: 3.1.8
-        version: 3.1.8
+        version: 3.1.8(terser@5.26.0)
       vite-plugin-eslint:
         specifier: 1.8.1
-        version: 1.8.1(eslint@8.57.0)(vite@3.1.8)
+        version: 1.8.1(eslint@8.57.0)(vite@3.1.8(terser@5.26.0))
 
 packages:
 
@@ -287,90 +287,105 @@ packages:
   '@babel/plugin-proposal-async-generator-functions@7.20.7':
     resolution: {integrity: sha512-xMbiLsn/8RK7Wq7VeVytytS2L6qE69bXPB10YCmMdDZbKF4okCqY74pI/jJQ/8U0b/F6NrT2+14b8/P9/3AMGA==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-async-generator-functions instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-class-properties@7.18.6':
     resolution: {integrity: sha512-cumfXOF0+nzZrrN8Rf0t7M+tF6sZc7vhQwYQck9q1/5w2OExlD+b4v4RpMJFaV1Z7WcDRgO6FqvxqxGlwo+RHQ==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-properties instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-class-static-block@7.21.0':
     resolution: {integrity: sha512-XP5G9MWNUskFuP30IfFSEFB0Z6HzLIUcjYM4bYOPHXl7eiJ9HFv8tWj6TXTN5QODiEhDZAeI4hLok2iHFFV4hw==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-static-block instead.
     peerDependencies:
       '@babel/core': ^7.12.0
 
   '@babel/plugin-proposal-dynamic-import@7.18.6':
     resolution: {integrity: sha512-1auuwmK+Rz13SJj36R+jqFPMJWyKEDd7lLSdOj4oJK0UTgGueSAtkrCvz9ewmgyU/P941Rv2fQwZJN8s6QruXw==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-dynamic-import instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-export-namespace-from@7.18.9':
     resolution: {integrity: sha512-k1NtHyOMvlDDFeb9G5PhUXuGj8m/wiwojgQVEhJ/fsVsMCpLyOP4h0uGEjYJKrRI+EVPlb5Jk+Gt9P97lOGwtA==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-export-namespace-from instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-json-strings@7.18.6':
     resolution: {integrity: sha512-lr1peyn9kOdbYc0xr0OdHTZ5FMqS6Di+H0Fz2I/JwMzGmzJETNeOFq2pBySw6X/KFL5EWDjlJuMsUGRFb8fQgQ==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-json-strings instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-logical-assignment-operators@7.20.7':
     resolution: {integrity: sha512-y7C7cZgpMIjWlKE5T7eJwp+tnRYM89HmRvWM5EQuB5BoHEONjmQ8lSNmBUwOyy/GFRsohJED51YBF79hE1djug==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-logical-assignment-operators instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-nullish-coalescing-operator@7.18.6':
     resolution: {integrity: sha512-wQxQzxYeJqHcfppzBDnm1yAY0jSRkUXR2z8RePZYrKwMKgMlE8+Z6LUno+bd6LvbGh8Gltvy74+9pIYkr+XkKA==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-nullish-coalescing-operator instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-numeric-separator@7.18.6':
     resolution: {integrity: sha512-ozlZFogPqoLm8WBr5Z8UckIoE4YQ5KESVcNudyXOR8uqIkliTEgJ3RoketfG6pmzLdeZF0H/wjE9/cCEitBl7Q==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-numeric-separator instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-object-rest-spread@7.20.7':
     resolution: {integrity: sha512-d2S98yCiLxDVmBmE8UjGcfPvNEUbA1U5q5WxaWFUGRzJSVAZqm5W6MbPct0jxnegUZ0niLeNX+IOzEs7wYg9Dg==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-object-rest-spread instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-optional-catch-binding@7.18.6':
     resolution: {integrity: sha512-Q40HEhs9DJQyaZfUjjn6vE8Cv4GmMHCYuMGIWUnlxH6400VGxOuwWsPt4FxXxJkC/5eOzgn0z21M9gMT4MOhbw==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-catch-binding instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-optional-chaining@7.21.0':
     resolution: {integrity: sha512-p4zeefM72gpmEe2fkUr/OnOXpWEf8nAgk7ZYVqqfFiyIG7oFfVZcCrU64hWn5xp4tQ9LkV4bTIa5rD0KANpKNA==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-chaining instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-private-methods@7.18.6':
     resolution: {integrity: sha512-nutsvktDItsNn4rpGItSNV2sz1XwS+nfU0Rg8aCx3W3NOKVzdMjJRu0O5OkgDp3ZGICSTbgRpxZoWsxoKRvbeA==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-private-methods instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-private-property-in-object@7.21.0':
     resolution: {integrity: sha512-ha4zfehbJjc5MmXBlHec1igel5TJXXLDDRbuJ4+XT2TJcyD9/V1919BA8gMvsdHcNMBy4WBUBiRb3nw/EQUtBw==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-private-property-in-object instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
   '@babel/plugin-proposal-unicode-property-regex@7.18.6':
     resolution: {integrity: sha512-2BShG/d5yoZyXZfVePH91urL5wTG6ASZU9M4o03lKK8u8UW1y08OMttBSOADTcJrnPMpvDXRG3G8fyLh4ovs8w==}
     engines: {node: '>=4'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-unicode-property-regex instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
@@ -744,6 +759,7 @@ packages:
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -751,6 +767,7 @@ packages:
 
   '@humanwhocodes/object-schema@2.0.2':
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
+    deprecated: Use @eslint/object-schema instead
 
   '@iconify-json/heroicons@1.1.21':
     resolution: {integrity: sha512-A+3L4KN+TjH3V8fQ2N2dkOOnLLxMgMBzO8RDT0P9YL+YzvLMIbe/lkDLSB8NB8x0DKWmkvTimoo1l4DKMwi7Zg==}
@@ -1340,8 +1357,8 @@ packages:
     resolution: {integrity: sha512-pHJg+jbuFsCjz9iclQBqyL3B2HLCBF71BwVNujUYEvCeQMvV97R59MNK3R2+jgJ3a1fcZgI9B3vYgz8lzr/BFQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  daisyui@4.12.2:
-    resolution: {integrity: sha512-ed3EFwPRLN+9+/MYPRB1pYjk6plRCBMobfBdSeB3voAS81KdL2pCKtbwJfUUpDdOnJ0F8T6oRdVX02P6UCD0Hg==}
+  daisyui@4.12.10:
+    resolution: {integrity: sha512-jp1RAuzbHhGdXmn957Z2XsTZStXGHzFfF0FgIOZj3Wv9sH7OZgLfXTRZNfKVYxltGUOBsG1kbWAdF5SrqjebvA==}
     engines: {node: '>=16.9.0'}
 
   debug@2.6.9:
@@ -4305,11 +4322,13 @@ snapshots:
       glob: 8.1.0
       is-reference: 1.2.1
       magic-string: 0.27.0
+    optionalDependencies:
       rollup: 3.29.4
 
   '@rollup/plugin-json@6.0.0(rollup@3.29.4)':
     dependencies:
       '@rollup/pluginutils': 5.0.2(rollup@3.29.4)
+    optionalDependencies:
       rollup: 3.29.4
 
   '@rollup/plugin-node-resolve@15.2.3(rollup@3.29.4)':
@@ -4320,6 +4339,7 @@ snapshots:
       is-builtin-module: 3.2.1
       is-module: 1.0.0
       resolve: 1.22.8
+    optionalDependencies:
       rollup: 3.29.4
 
   '@rollup/pluginutils@4.2.1':
@@ -4332,6 +4352,7 @@ snapshots:
       '@types/estree': 1.0.0
       estree-walker: 2.0.2
       picomatch: 2.3.1
+    optionalDependencies:
       rollup: 3.17.2
 
   '@rollup/pluginutils@5.0.2(rollup@3.29.4)':
@@ -4339,6 +4360,7 @@ snapshots:
       '@types/estree': 1.0.0
       estree-walker: 2.0.2
       picomatch: 2.3.1
+    optionalDependencies:
       rollup: 3.29.4
 
   '@sideway/address@4.1.4':
@@ -4364,11 +4386,12 @@ snapshots:
     dependencies:
       solid-js: 1.8.17
 
-  '@solid-primitives/storage@3.7.1(solid-js@1.8.17)(solid-start@0.2.21)':
+  '@solid-primitives/storage@3.7.1(solid-js@1.8.17)(solid-start@0.2.21(@solidjs/meta@0.28.7(solid-js@1.8.17))(@solidjs/router@0.7.1(solid-js@1.8.17))(solid-js@1.8.17)(solid-start-node@0.3.11)(solid-start-vercel@0.3.11)(vite@3.1.8(terser@5.26.0)))':
     dependencies:
       '@solid-primitives/utils': 6.2.3(solid-js@1.8.17)
       solid-js: 1.8.17
-      solid-start: 0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.1)(solid-js@1.8.17)(solid-start-node@0.3.11)(solid-start-vercel@0.3.11)(vite@3.1.8)
+    optionalDependencies:
+      solid-start: 0.2.21(@solidjs/meta@0.28.7(solid-js@1.8.17))(@solidjs/router@0.7.1(solid-js@1.8.17))(solid-js@1.8.17)(solid-start-node@0.3.11)(solid-start-vercel@0.3.11)(vite@3.1.8(terser@5.26.0))
 
   '@solid-primitives/utils@6.2.3(solid-js@1.8.17)':
     dependencies:
@@ -4407,7 +4430,7 @@ snapshots:
 
   '@types/ua-parser-js@0.7.39': {}
 
-  '@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.57.0)(typescript@5.5.2)':
+  '@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.5.2))(eslint@8.57.0)(typescript@5.5.2)':
     dependencies:
       '@eslint-community/regexpp': 4.10.0
       '@typescript-eslint/parser': 5.62.0(eslint@8.57.0)(typescript@5.5.2)
@@ -4421,6 +4444,7 @@ snapshots:
       natural-compare-lite: 1.4.0
       semver: 7.3.8
       tsutils: 3.21.0(typescript@5.5.2)
+    optionalDependencies:
       typescript: 5.5.2
     transitivePeerDependencies:
       - supports-color
@@ -4432,6 +4456,7 @@ snapshots:
       '@typescript-eslint/typescript-estree': 5.62.0(typescript@5.5.2)
       debug: 4.3.4
       eslint: 8.57.0
+    optionalDependencies:
       typescript: 5.5.2
     transitivePeerDependencies:
       - supports-color
@@ -4453,6 +4478,7 @@ snapshots:
       debug: 4.3.4
       eslint: 8.57.0
       tsutils: 3.21.0(typescript@5.5.2)
+    optionalDependencies:
       typescript: 5.5.2
     transitivePeerDependencies:
       - supports-color
@@ -4470,6 +4496,7 @@ snapshots:
       is-glob: 4.0.3
       semver: 7.5.4
       tsutils: 3.21.0(typescript@5.5.2)
+    optionalDependencies:
       typescript: 5.5.2
     transitivePeerDependencies:
       - supports-color
@@ -4484,6 +4511,7 @@ snapshots:
       minimatch: 9.0.4
       semver: 7.6.2
       ts-api-utils: 1.3.0(typescript@5.5.2)
+    optionalDependencies:
       typescript: 5.5.2
     transitivePeerDependencies:
       - supports-color
@@ -4886,11 +4914,11 @@ snapshots:
 
   culori@3.3.0: {}
 
-  daisyui@4.12.2(postcss@8.4.38):
+  daisyui@4.12.10(postcss@8.4.38):
     dependencies:
       css-selector-tokenizer: 0.8.0
       culori: 3.3.0
-      picocolors: 1.0.0
+      picocolors: 1.0.1
       postcss-js: 4.0.1(postcss@8.4.38)
     transitivePeerDependencies:
       - postcss
@@ -5211,22 +5239,22 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-config-airbnb-base@15.0.0(eslint-plugin-import@2.29.1)(eslint@8.57.0):
+  eslint-config-airbnb-base@15.0.0(eslint-plugin-import@2.29.1(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.5.2))(eslint@8.57.0))(eslint@8.57.0):
     dependencies:
       confusing-browser-globals: 1.0.11
       eslint: 8.57.0
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@5.62.0)(eslint@8.57.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.5.2))(eslint@8.57.0)
       object.assign: 4.1.4
       object.entries: 1.1.6
       semver: 6.3.1
 
-  eslint-config-airbnb-typescript@17.1.0(@typescript-eslint/eslint-plugin@5.62.0)(@typescript-eslint/parser@5.62.0)(eslint-plugin-import@2.29.1)(eslint@8.57.0):
+  eslint-config-airbnb-typescript@17.1.0(@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.5.2))(eslint@8.57.0)(typescript@5.5.2))(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.5.2))(eslint-plugin-import@2.29.1(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.5.2))(eslint@8.57.0))(eslint@8.57.0):
     dependencies:
-      '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.57.0)(typescript@5.5.2)
+      '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.5.2))(eslint@8.57.0)(typescript@5.5.2)
       '@typescript-eslint/parser': 5.62.0(eslint@8.57.0)(typescript@5.5.2)
       eslint: 8.57.0
-      eslint-config-airbnb-base: 15.0.0(eslint-plugin-import@2.29.1)(eslint@8.57.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@5.62.0)(eslint@8.57.0)
+      eslint-config-airbnb-base: 15.0.0(eslint-plugin-import@2.29.1(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.5.2))(eslint@8.57.0))(eslint@8.57.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.5.2))(eslint@8.57.0)
 
   eslint-config-prettier@9.1.0(eslint@8.57.0):
     dependencies:
@@ -5240,18 +5268,18 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.8.0(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-node@0.3.9)(eslint@8.57.0):
+  eslint-module-utils@2.8.0(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.5.2))(eslint-import-resolver-node@0.3.9)(eslint@8.57.0):
     dependencies:
-      '@typescript-eslint/parser': 5.62.0(eslint@8.57.0)(typescript@5.5.2)
       debug: 3.2.7
+    optionalDependencies:
+      '@typescript-eslint/parser': 5.62.0(eslint@8.57.0)(typescript@5.5.2)
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.29.1(@typescript-eslint/parser@5.62.0)(eslint@8.57.0):
+  eslint-plugin-import@2.29.1(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.5.2))(eslint@8.57.0):
     dependencies:
-      '@typescript-eslint/parser': 5.62.0(eslint@8.57.0)(typescript@5.5.2)
       array-includes: 3.1.7
       array.prototype.findlastindex: 1.2.3
       array.prototype.flat: 1.3.2
@@ -5260,7 +5288,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-node@0.3.9)(eslint@8.57.0)
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.5.2))(eslint-import-resolver-node@0.3.9)(eslint@8.57.0)
       hasown: 2.0.0
       is-core-module: 2.13.1
       is-glob: 4.0.3
@@ -5270,18 +5298,22 @@ snapshots:
       object.values: 1.1.7
       semver: 6.3.1
       tsconfig-paths: 3.15.0
+    optionalDependencies:
+      '@typescript-eslint/parser': 5.62.0(eslint@8.57.0)(typescript@5.5.2)
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-prettier@5.1.3(eslint-config-prettier@9.1.0)(eslint@8.57.0)(prettier@3.3.2):
+  eslint-plugin-prettier@5.1.3(@types/eslint@8.21.0)(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.3.2):
     dependencies:
       eslint: 8.57.0
-      eslint-config-prettier: 9.1.0(eslint@8.57.0)
       prettier: 3.3.2
       prettier-linter-helpers: 1.0.0
       synckit: 0.8.8
+    optionalDependencies:
+      '@types/eslint': 8.21.0
+      eslint-config-prettier: 9.1.0(eslint@8.57.0)
 
   eslint-plugin-solid@0.14.1(eslint@8.57.0)(typescript@5.5.2):
     dependencies:
@@ -5450,7 +5482,7 @@ snapshots:
   flatted@3.2.7: {}
 
   follow-redirects@1.15.2(debug@4.3.4):
-    dependencies:
+    optionalDependencies:
       debug: 4.3.4
 
   for-each@0.3.3:
@@ -6102,8 +6134,9 @@ snapshots:
   postcss-load-config@4.0.2(postcss@8.4.38):
     dependencies:
       lilconfig: 3.0.0
-      postcss: 8.4.38
       yaml: 2.3.4
+    optionalDependencies:
+      postcss: 8.4.38
 
   postcss-nested@6.0.1(postcss@8.4.38):
     dependencies:
@@ -6214,9 +6247,10 @@ snapshots:
     dependencies:
       open: 8.4.2
       picomatch: 2.3.1
-      rollup: 3.17.2
       source-map: 0.7.4
       yargs: 17.7.0
+    optionalDependencies:
+      rollup: 3.17.2
 
   rollup-route-manifest@1.0.0(rollup@3.17.2):
     dependencies:
@@ -6344,7 +6378,7 @@ snapshots:
       '@babel/types': 7.21.0
       solid-js: 1.8.17
 
-  solid-start-node@0.3.11(solid-start@0.2.21)(vite@3.1.8):
+  solid-start-node@0.3.11(solid-start@0.2.21)(vite@3.1.8(terser@5.26.0)):
     dependencies:
       '@rollup/plugin-commonjs': 24.1.0(rollup@3.29.4)
       '@rollup/plugin-json': 6.0.0(rollup@3.29.4)
@@ -6353,13 +6387,13 @@ snapshots:
       polka: 1.0.0-next.22
       rollup: 3.29.4
       sirv: 2.0.4
-      solid-start: 0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.1)(solid-js@1.8.17)(solid-start-node@0.3.11)(solid-start-vercel@0.3.11)(vite@3.1.8)
+      solid-start: 0.2.21(@solidjs/meta@0.28.7(solid-js@1.8.17))(@solidjs/router@0.7.1(solid-js@1.8.17))(solid-js@1.8.17)(solid-start-node@0.3.11)(solid-start-vercel@0.3.11)(vite@3.1.8(terser@5.26.0))
       terser: 5.26.0
-      vite: 3.1.8
+      vite: 3.1.8(terser@5.26.0)
     transitivePeerDependencies:
       - supports-color
 
-  solid-start-vercel@0.3.11(solid-start@0.2.21)(vite@3.1.8):
+  solid-start-vercel@0.3.11(solid-start@0.2.21)(vite@3.1.8(terser@5.26.0)):
     dependencies:
       '@rollup/plugin-commonjs': 24.1.0(rollup@3.29.4)
       '@rollup/plugin-json': 6.0.0(rollup@3.29.4)
@@ -6368,14 +6402,14 @@ snapshots:
       fast-glob: 3.2.12
       micromatch: 4.0.5
       rollup: 3.29.4
-      solid-start: 0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.1)(solid-js@1.8.17)(solid-start-node@0.3.11)(solid-start-vercel@0.3.11)(vite@3.1.8)
+      solid-start: 0.2.21(@solidjs/meta@0.28.7(solid-js@1.8.17))(@solidjs/router@0.7.1(solid-js@1.8.17))(solid-js@1.8.17)(solid-start-node@0.3.11)(solid-start-vercel@0.3.11)(vite@3.1.8(terser@5.26.0))
       terser: 5.26.0
-      vite: 3.1.8
+      vite: 3.1.8(terser@5.26.0)
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  solid-start@0.2.21(@solidjs/meta@0.28.7)(@solidjs/router@0.7.1)(solid-js@1.8.17)(solid-start-node@0.3.11)(solid-start-vercel@0.3.11)(vite@3.1.8):
+  solid-start@0.2.21(@solidjs/meta@0.28.7(solid-js@1.8.17))(@solidjs/router@0.7.1(solid-js@1.8.17))(solid-js@1.8.17)(solid-start-node@0.3.11)(solid-start-vercel@0.3.11)(vite@3.1.8(terser@5.26.0)):
     dependencies:
       '@babel/core': 7.21.0
       '@babel/generator': 7.21.1
@@ -6406,14 +6440,15 @@ snapshots:
       set-cookie-parser: 2.5.1
       sirv: 2.0.2
       solid-js: 1.8.17
-      solid-start-node: 0.3.11(solid-start@0.2.21)(vite@3.1.8)
-      solid-start-vercel: 0.3.11(solid-start@0.2.21)(vite@3.1.8)
       terser: 5.16.4
       undici: 5.20.0
-      vite: 3.1.8
-      vite-plugin-inspect: 0.7.15(rollup@3.17.2)(vite@3.1.8)
-      vite-plugin-solid: 2.5.0(solid-js@1.8.17)(vite@3.1.8)
+      vite: 3.1.8(terser@5.26.0)
+      vite-plugin-inspect: 0.7.15(rollup@3.17.2)(vite@3.1.8(terser@5.26.0))
+      vite-plugin-solid: 2.5.0(solid-js@1.8.17)(vite@3.1.8(terser@5.26.0))
       wait-on: 6.0.1(debug@4.3.4)
+    optionalDependencies:
+      solid-start-node: 0.3.11(solid-start@0.2.21)(vite@3.1.8(terser@5.26.0))
+      solid-start-vercel: 0.3.11(solid-start@0.2.21)(vite@3.1.8(terser@5.26.0))
     transitivePeerDependencies:
       - supports-color
 
@@ -6703,7 +6738,7 @@ snapshots:
     dependencies:
       browserslist: 4.22.2
       escalade: 3.1.1
-      picocolors: 1.0.0
+      picocolors: 1.0.1
 
   update-browserslist-db@1.0.16(browserslist@4.23.1):
     dependencies:
@@ -6723,15 +6758,15 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite-plugin-eslint@1.8.1(eslint@8.57.0)(vite@3.1.8):
+  vite-plugin-eslint@1.8.1(eslint@8.57.0)(vite@3.1.8(terser@5.26.0)):
     dependencies:
       '@rollup/pluginutils': 4.2.1
       '@types/eslint': 8.21.0
       eslint: 8.57.0
       rollup: 2.78.1
-      vite: 3.1.8
+      vite: 3.1.8(terser@5.26.0)
 
-  vite-plugin-inspect@0.7.15(rollup@3.17.2)(vite@3.1.8):
+  vite-plugin-inspect@0.7.15(rollup@3.17.2)(vite@3.1.8(terser@5.26.0)):
     dependencies:
       '@antfu/utils': 0.7.7
       '@rollup/pluginutils': 5.0.2(rollup@3.17.2)
@@ -6740,12 +6775,12 @@ snapshots:
       kolorist: 1.8.0
       sirv: 2.0.4
       ufo: 1.3.2
-      vite: 3.1.8
+      vite: 3.1.8(terser@5.26.0)
     transitivePeerDependencies:
       - rollup
       - supports-color
 
-  vite-plugin-solid@2.5.0(solid-js@1.8.17)(vite@3.1.8):
+  vite-plugin-solid@2.5.0(solid-js@1.8.17)(vite@3.1.8(terser@5.26.0)):
     dependencies:
       '@babel/core': 7.21.0
       '@babel/preset-typescript': 7.21.0(@babel/core@7.21.0)
@@ -6753,12 +6788,12 @@ snapshots:
       merge-anything: 5.1.4
       solid-js: 1.8.17
       solid-refresh: 0.4.3(solid-js@1.8.17)
-      vite: 3.1.8
-      vitefu: 0.2.4(vite@3.1.8)
+      vite: 3.1.8(terser@5.26.0)
+      vitefu: 0.2.4(vite@3.1.8(terser@5.26.0))
     transitivePeerDependencies:
       - supports-color
 
-  vite@3.1.8:
+  vite@3.1.8(terser@5.26.0):
     dependencies:
       esbuild: 0.15.18
       postcss: 8.4.38
@@ -6766,10 +6801,11 @@ snapshots:
       rollup: 2.78.1
     optionalDependencies:
       fsevents: 2.3.2
+      terser: 5.26.0
 
-  vitefu@0.2.4(vite@3.1.8):
-    dependencies:
-      vite: 3.1.8
+  vitefu@0.2.4(vite@3.1.8(terser@5.26.0)):
+    optionalDependencies:
+      vite: 3.1.8(terser@5.26.0)
 
   wait-on@6.0.1(debug@4.3.4):
     dependencies:
