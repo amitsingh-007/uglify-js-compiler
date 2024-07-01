@@ -15,7 +15,7 @@
     "@solidjs/router": "0.7.1",
     "@stackblitz/sdk": "1.10.0",
     "daisyui": "4.12.2",
-    "solid-js": "1.8.17",
+    "solid-js": "1.8.18",
     "solid-start": "0.2.21",
     "ua-parser-js": "1.0.38",
     "unplugin-icons": "0.19.0",
