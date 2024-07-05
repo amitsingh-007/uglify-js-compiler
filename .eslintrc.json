@@ -20,6 +20,8 @@
   "rules": {
     "import/extensions": "off",
     "no-underscore-dangle": "off",
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/naming-convention": "off",
     "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/no-unused-vars": "warn",
     "no-console": "off",

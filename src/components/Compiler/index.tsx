@@ -1,17 +1,14 @@
-import { Show, VoidComponent } from 'solid-js';
-import usePlatform from '~/hooks/usePlatform';
-import CodeInputs from './CodeInputs';
-import CodeRunner from './CodeRunner';
+import { ErrorBoundary, VoidComponent } from 'solid-js';
+import CodeInputOutput from './code-input-output';
+import CodeRunner from './code-runner';
 
 const Compiler: VoidComponent = () => {
-  const { isMobile } = usePlatform();
-
   return (
-    <div class="flex h-full flex-col gap-8 pt-10 pb-4">
-      <CodeInputs />
-      <Show when={!isMobile}>
+    <div class="flex h-full flex-col gap-8 pb-4 pt-10">
+      <CodeInputOutput />
+      <ErrorBoundary fallback={null}>
         <CodeRunner />
-      </Show>
+      </ErrorBoundary>
     </div>
   );
 };
