@@ -1,4 +1,4 @@
-import Compiler from '~/components/compiler/index.tsx';
+import Compiler from '../components/compiler/index.tsx';
 import MetaTags from './meta-tags';
 
 export default function Home() {
