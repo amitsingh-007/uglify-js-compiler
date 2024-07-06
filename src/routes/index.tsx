@@ -1,4 +1,4 @@
-import Compiler from '~/components/compiler';
+import Compiler from '~/components/compiler/index';
 import MetaTags from './meta-tags';
 
 export default function Home() {
