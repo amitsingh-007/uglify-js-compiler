@@ -12,6 +12,7 @@
     "strict": true,
     "types": ["vinxi/types/client"],
     "isolatedModules": true,
+    "baseUrl": ".",
     "paths": {
       "~/ui/*": ["./src/libs/ui/*"], // Not working
       "~/*": ["./src/*"]
