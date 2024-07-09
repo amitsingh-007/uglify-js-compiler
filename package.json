@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vinxi dev",
     "build": "bun lint && vinxi build",
-    "start": "bun build && vinxi start",
+    "start": "bun run build && vinxi start",
     "lint": "eslint ."
   },
   "dependencies": {
