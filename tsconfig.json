@@ -1,17 +1,20 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "strict": true,
-    "noUnusedLocals": true,
     "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "node",
-    "jsxImportSource": "solid-js",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "jsx": "preserve",
-    "types": ["solid-start/env", "unplugin-icons/types/solid"],
-    "baseUrl": "./",
+    "jsxImportSource": "solid-js",
+    "allowJs": true,
+    "noEmit": true,
+    "strict": true,
+    "types": ["vinxi/types/client"],
+    "isolatedModules": true,
+    "baseUrl": ".",
     "paths": {
+      "~/ui/*": ["./src/libs/ui/*"], // Not working
       "~/*": ["./src/*"]
     }
   }

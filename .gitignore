@@ -1,5 +1,23 @@
+
+dist
 .solid
 .output
 .vercel
-.DS_Store
+.vinxi
+
+# Environment
+.env
+.env*.local
+
+# dependencies
 /node_modules
+
+# IDEs and editors
+.settings/
+
+# Temp
+gitignore
+
+# System Files
+.DS_Store
+Thumbs.db
