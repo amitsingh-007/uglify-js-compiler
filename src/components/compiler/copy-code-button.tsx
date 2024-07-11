@@ -1,20 +1,25 @@
-import { CheckCheck, Clipboard } from 'lucide-solid';
-import { Accessor, VoidComponent, createSignal } from 'solid-js';
+import { CheckCheck, Clipboard, CopyCheck } from 'lucide-solid';
+import { Accessor, createSignal, VoidComponent } from 'solid-js';
 import { Button } from '~/libs/ui/button';
+import { toast } from '~/libs/ui/sonner';
 
 const CopyCodeButton: VoidComponent<{
   text: Accessor<string>;
 }> = (props) => {
   const [showCopied, setShowCopied] = createSignal(false);
+  let timeout: NodeJS.Timeout;
 
   const handleCopyCode = () => {
-    if (showCopied()) {
-      return;
-    }
+    clearTimeout(timeout);
 
     navigator.clipboard.writeText(props.text());
     setShowCopied(true);
-    setTimeout(() => {
+    toast('Code copied', {
+      description: 'Paste below to run the uglified code',
+      icon: <CopyCheck size={18} />,
+    });
+
+    timeout = setTimeout(() => {
       setShowCopied(false);
     }, 3000);
   };
@@ -25,6 +30,7 @@ const CopyCodeButton: VoidComponent<{
         variant="secondary"
         class="h-7 w-7 p-[5px]"
         onClick={handleCopyCode}
+        disabled={!props.text()}
       >
         {showCopied() ? <CheckCheck /> : <Clipboard />}
       </Button>

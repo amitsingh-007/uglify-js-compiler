@@ -6,6 +6,7 @@ import { ErrorBoundary, Suspense } from 'solid-js';
 import Header from '~/components/header';
 import './app.css';
 import { getStorageManager } from './utils/storage-manager';
+import { Toaster } from '~/libs/ui/sonner';
 
 export default function App() {
   return (
@@ -18,6 +19,9 @@ export default function App() {
               <ColorModeProvider storageManager={getStorageManager()}>
                 <div class="flex h-full flex-col">
                   <Header />
+                  <ErrorBoundary fallback={null}>
+                    <Toaster />
+                  </ErrorBoundary>
                   <ErrorBoundary fallback={null}>
                     <div class="container flex-1">{props.children}</div>
                   </ErrorBoundary>
