@@ -1,6 +1,6 @@
 # UglifyJS Compiler
 
-This is a JavaScript Compiler to compile any JavaScript code into a valid uglified transpiled JavaScript code. You can also execute the uglified JavaScript code right from the browser itself using StackBlitz VM.
+This is a JavaScript Compiler to compile any JavaScript code into a valid uglified and transpiled JavaScript code. You can also execute the uglified JavaScript code right from the browser itself using StackBlitz VM.
 
 Visit the [UglifyJS Compiler](https://uglifyjs-compiler.vercel.app) to use the uglify JavaScript compiler.
 
