@@ -10,7 +10,7 @@ const MetaTags = () => {
       <Meta name="theme-color" content="#FFD436" />
       <Meta property="application-name" content="Uglify JS Compiler" />
       <Link rel="icon" href="/favicon.ico" />
-      <Link rel="canonical" href="https://uglify-js-compiler.vercel.app" />
+      <Link rel="canonical" href="https://uglifyjs-compiler.vercel.app" />
       <Meta
         name="description"
         content="Compile any JS code into it's uglified transpiled code and execute it right from the browser. You can also execute the uglified code right from the browser."
@@ -20,10 +20,10 @@ const MetaTags = () => {
         property="og:description"
         content="Compile any JS code into it's uglified transpiled code and execute it right from the browser. You can also execute the uglified code right from the browser."
       />
-      <Meta property="og:url" content="https://uglify-js-compiler.vercel.app" />
+      <Meta property="og:url" content="https://uglifyjs-compiler.vercel.app" />
       <Meta
         property="og:image"
-        content="https://uglify-js-compiler.vercel.app/favicon.ico"
+        content="https://uglifyjs-compiler.vercel.app/favicon.ico"
       />
       <Meta property="og:site_name" content="Uglify JS Compiler" />
     </>

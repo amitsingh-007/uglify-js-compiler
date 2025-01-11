@@ -13,7 +13,7 @@ const Header: VoidComponent = () => {
       <div class="z-10 flex items-center gap-5">
         <Button
           as={A}
-          href="https://github.com/amitsingh-007/uglify-js-compiler"
+          href="https://github.com/amitsingh-007/uglifyjs-compiler"
           target="_blank"
           variant="ghost"
           title="GitHub"
