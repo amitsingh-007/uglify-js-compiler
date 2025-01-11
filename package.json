@@ -16,7 +16,7 @@
     "@stackblitz/sdk": "1.11.0",
     "class-variance-authority": "0.7.0",
     "clsx": "2.1.1",
-    "lucide-solid": "0.453.0",
+    "lucide-solid": "0.471.0",
     "solid-js": "1.9.2",
     "solid-sonner": "0.2.8",
     "tailwind-merge": "2.5.4",
