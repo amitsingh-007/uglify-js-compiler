@@ -1,7 +1,7 @@
 import { CheckCheck, Clipboard, CopyCheck } from 'lucide-solid';
 import { Accessor, createSignal, VoidComponent } from 'solid-js';
-import { Button } from '~/libs/ui/button';
-import { toast } from '~/libs/ui/sonner';
+import { toast } from 'solid-sonner';
+import { Button } from '../ui/button';
 
 const CopyCodeButton: VoidComponent<{
   text: Accessor<string>;

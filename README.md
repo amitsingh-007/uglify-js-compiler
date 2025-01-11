@@ -6,5 +6,5 @@ Visit the [Uglify JS Compiler](https://uglify-js-compiler.vercel.app) to use the
 
 ## Development
 
-- Run `bun i` to install the dependencies.
-- Run `bun dev` to start local dev server.
+- Run `pnpm i` to install the dependencies.
+- Run `pnpm dev` to start local dev server.

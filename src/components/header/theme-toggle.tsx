@@ -1,7 +1,7 @@
 import { useColorMode } from '@kobalte/core';
 import { SunMoon } from 'lucide-solid';
 import { VoidComponent } from 'solid-js';
-import { Button } from '~/libs/ui/button';
+import { Button } from '../ui/button';
 
 const ThemeToggle: VoidComponent = () => {
   const { colorMode, setColorMode } = useColorMode();
