@@ -1,45 +1,35 @@
 {
-  "name": "uglify-js-compiler",
+  "name": "example-with-tailwindcss",
   "type": "module",
   "scripts": {
     "dev": "vinxi dev",
-    "build": "bun lint && vinxi build",
-    "start": "bun run build && vinxi start",
-    "lint": "eslint ."
+    "build": "vinxi build",
+    "start": "vinxi start"
   },
   "dependencies": {
     "@kobalte/core": "0.13.7",
-    "@solid-primitives/scheduled": "1.4.3",
+    "@solid-primitives/scheduled": "1.4.4",
     "@solidjs/meta": "0.29.4",
-    "@solidjs/router": "0.14.10",
-    "@solidjs/start": "1.0.9",
+    "@solidjs/router": "0.15.0",
+    "@solidjs/start": "1.0.11",
     "@stackblitz/sdk": "1.11.0",
-    "class-variance-authority": "0.7.0",
+    "autoprefixer": "10.4.19",
+    "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
-    "lucide-solid": "0.453.0",
+    "lucide-solid": "0.471.0",
+    "postcss": "8.4.38",
     "solid-js": "1.9.2",
     "solid-sonner": "0.2.8",
-    "tailwind-merge": "2.5.4",
-    "tailwindcss-animate": "1.0.7"
+    "tailwind-merge": "2.6.0",
+    "tailwindcss": "3.4.3",
+    "tailwindcss-animate": "1.0.7",
+    "vinxi": "0.4.3"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "7.16.0",
-    "@typescript-eslint/parser": "7.18.0",
-    "autoprefixer": "10.4.20",
-    "eslint": "8.57.0",
-    "eslint-config-airbnb-typescript": "18.0.0",
-    "eslint-config-prettier": "9.1.0",
-    "eslint-plugin-import": "2.31.0",
-    "eslint-plugin-prettier": "5.2.1",
-    "eslint-plugin-solid": "0.14.3",
-    "postcss": "8.4.47",
-    "prettier": "3.3.3",
-    "prettier-plugin-tailwindcss": "0.6.8",
-    "tailwindcss": "3.4.14",
-    "typescript": "5.6.3",
-    "vinxi": "0.4.3",
-    "vite-plugin-eslint": "1.8.1",
-    "vite-tsconfig-paths": "5.0.1"
+    "vite-plugin-eslint": "1.8.1"
+  },
+  "overrides": {
+    "vite": "5.4.10"
   },
   "engines": {
     "node": ">=20"

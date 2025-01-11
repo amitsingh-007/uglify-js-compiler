@@ -2,7 +2,7 @@ import { VoidComponent } from 'solid-js';
 import { Github } from 'lucide-solid';
 import { A } from '@solidjs/router';
 import ThemeToggle from './theme-toggle';
-import { Button } from '~/libs/ui/button';
+import { Button } from '../ui/button';
 
 const Header: VoidComponent = () => {
   return (

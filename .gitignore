@@ -3,7 +3,9 @@ dist
 .solid
 .output
 .vercel
+.netlify
 .vinxi
+app.config.timestamp_*.js
 
 # Environment
 .env
@@ -13,6 +15,10 @@ dist
 /node_modules
 
 # IDEs and editors
+/.idea
+.project
+.classpath
+*.launch
 .settings/
 
 # Temp

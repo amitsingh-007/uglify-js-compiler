@@ -1,12 +1,8 @@
-import { useColorMode } from '@kobalte/core/color-mode';
-import { Toaster as Sonner, toast } from 'solid-sonner';
+import { Toaster as Sonner } from 'solid-sonner';
 
-const Toaster = (props: Parameters<typeof Sonner>[0]) => {
-  const { colorMode } = useColorMode();
-
+export const Toaster = (props: Parameters<typeof Sonner>[0]) => {
   return (
     <Sonner
-      theme={colorMode()}
       class="toaster group"
       toastOptions={{
         classes: {
@@ -23,5 +19,3 @@ const Toaster = (props: Parameters<typeof Sonner>[0]) => {
     />
   );
 };
-
-export { toast, Toaster };

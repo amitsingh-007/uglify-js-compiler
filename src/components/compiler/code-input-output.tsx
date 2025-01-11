@@ -1,17 +1,17 @@
 import { createScheduled, debounce } from '@solid-primitives/scheduled';
 import { Shuffle } from 'lucide-solid';
 import { VoidComponent, createMemo, createSignal } from 'solid-js';
-import { TextArea } from '~/libs/ui/textarea';
-import { TextFieldRoot } from '~/libs/ui/textfield';
-import getCompiledCode from '~/utils/compile';
 import CopyCodeButton from './copy-code-button';
+import getCompiledCode from '~/utils/compile';
+import { TextFieldRoot } from '../ui/textfield';
+import { TextArea } from '../ui/textarea';
 
 const CodeInputOutput: VoidComponent = () => {
   const [inputCode, setInputCode] = createSignal('');
 
   const scheduled = createScheduled((fn) => debounce(fn, 200));
 
-  const debouncedOutputCode = createMemo((staleValue = '') => {
+  const debouncedOutputCode = createMemo((staleValue: string = '') => {
     const newValue = getCompiledCode(inputCode());
     return scheduled() ? newValue : staleValue;
   });
