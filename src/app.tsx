@@ -13,16 +13,16 @@ export default function App() {
       root={(props) => (
         <Suspense>
           <MetaProvider>
-          <ColorModeScript />
-          <ColorModeProvider>
-            <div class="flex h-full flex-col">
-              <Header />
-              <ErrorBoundary fallback="Something went wrong">
-                <div class="container flex-1">{props.children}</div>
-              </ErrorBoundary>
-              <Toaster />
-            </div>
-          </ColorModeProvider>
+            <ColorModeScript />
+            <ColorModeProvider>
+              <div class="flex h-full flex-col">
+                <Header />
+                <ErrorBoundary fallback="Something went wrong">
+                  <div class="container flex-1">{props.children}</div>
+                </ErrorBoundary>
+                <Toaster />
+              </div>
+            </ColorModeProvider>
           </MetaProvider>
         </Suspense>
       )}
